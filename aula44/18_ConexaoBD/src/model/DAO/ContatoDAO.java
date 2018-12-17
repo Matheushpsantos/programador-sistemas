@@ -20,7 +20,7 @@ public class ContatoDAO {
 			String sql = "insert into contato (nome, email, mensagem) values (?,?,?)";
 
 			Conexao conex = new Conexao("jdbc:mysql://localhost:3306/18_conexaobd?useTimezone=true%serverTimezone=UTC",
-					"com.mysql.cj.jdbc.Driver","matheus","senha");
+					"com.mysql.cj.jdbc.Driver","jeffrey","password");
 
 			Connection con = conex.obterConexao();
 
@@ -54,7 +54,7 @@ public class ContatoDAO {
 			String sql = "delete from contato where id = ?";
 
 			Conexao conex = new Conexao("jdbc:mysql://localhost:3306/18_conexaobd?useTimezone=true%serverTimezone=UTC",
-					"com.mysql.cj.jdbc.Driver","matheus","senha");
+					"com.mysql.cj.jdbc.Driver","jeffrey","password");
 
 			Connection con = conex.obterConexao();
 
@@ -82,7 +82,7 @@ public class ContatoDAO {
 			String sql = "Select * from contato";
 
 			Conexao conex = new Conexao ("jdbc:mysql://localhost:3306/18_conexaobd?useTimezone=true%serverTimezone=UTC",
-					"com.mysql.cj.jdbc.Driver","matheus","senha");
+					"com.mysql.cj.jdbc.Driver","jeffrey","password");
 			
 			Connection con = conex.obterConexao();
 
@@ -116,7 +116,7 @@ public class ContatoDAO {
 			String sql = "update contato set mensagem = ? where id = ?";
 
 			Conexao conex = new Conexao("jdbc:mysql://localhost:3306/18_conexaobd?useTimezone=true%serverTimezone=UTC",
-					"com.mysql.cj.jdbc.Driver","matheus","senha");
+					"com.mysql.cj.jdbc.Driver","jeffrey","password");
 
 			Connection con = conex.obterConexao();
 

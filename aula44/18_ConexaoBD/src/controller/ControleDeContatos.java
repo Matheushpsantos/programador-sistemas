@@ -34,6 +34,18 @@ public class ControleDeContatos {
 				 cdc.buscarMensagens();
 				 break;
 			
+			case APAGAR_MENSAGEM:
+				cdc.apagarMensagem();
+				break;
+			
+			case ATUALIZAR_MENSAGEM:
+				cdc.atualizarMensagem();
+				break;
+				
+				
+			case SAIR:
+				System.out.println("Você realmente quer SAIR? \n escolha 5 novamente para SAIR ");
+				break;
 			default:
 				System.out.println("Opção invalida!");
 			}
